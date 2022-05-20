@@ -378,7 +378,7 @@ html ::-webkit-scrollbar-thumb:hover {
 .content h5 {
   margin-top: 0;
   margin-bottom: 0;
-  border-bottom: 0;
+  border-bottom: 1px solid var(ls-block-bullet-border-color);
 }
 .content .editor-inner textarea {
   margin: 0 0 !important;
