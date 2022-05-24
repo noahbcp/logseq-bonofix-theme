@@ -416,8 +416,8 @@ html ::-webkit-scrollbar-thumb:hover {
   border: 2px solid var(--ls-page-checkbox-color);
   z-index: 1;
   background-color:transparent !important;
-  height: 16px;
-  width: 16px;
+  height: 18px;
+  width: 18px;
   position: relative;
   margin-top: unset !important;
   margin-left: 0.1em;
@@ -427,6 +427,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 .content .form-checkbox:checked,
 .form-checkbox:checked:focus {
+  border-radius: 4px;
   background-color: var(--ls-success-color) !important;
   border: 2px solid var(--ls-page-checkbox-color);
 }
@@ -478,19 +479,22 @@ a.priority[href="#/page/A" i],
 
 a[priority]::before,
 a.priority::before {
-  transform: translateY(-1px);
   border-radius: 4px !important;
   border: 1px solid #eee;
   font-size: 12px;
   font-weight: 600;
   height: 18px;
   width: 18px;
+  transform: translateY(-2px);
   position: relative;
   margin-top: unset !important;
   text-align: center;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+.done {
+  text-decoration: none;
 }
 .content :not(pre) > code {
   border-radius: 3px;
